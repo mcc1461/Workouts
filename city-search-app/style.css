@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+
+.logo {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.logo img {
+  width: 50px;
+  padding-bottom: 1rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.logo-text h2 {
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+.logo-text p {
+  /* margin-left: 2.5rem; */
+  font-size: 0.9rem;
+  align-self: flex-end;
+  text-decoration: underline;
+  font-weight: bold !important;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b4e95;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.right-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right-text .profile {
+  background-color: #09386c;
+  padding: 0.7rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+.right-text p {
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 HEADER                                     */
+/* -------------------------------------------------------------------------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  color: whitesmoke;
+  padding: 9rem;
+  height: 450px;
+  background-image: url("./img/BilgeAdam-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  width: 100%;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+header input {
+  margin-top: 0.9rem;
+  width: 45%;
+  border-radius: 2rem;
+  padding: 1.3rem;
+  /* border: none; */
+  outline: none;
+  font-size: 1.2rem;
+  border: 5px solid #09386c;
+  box-shadow: 0 0px 0px 11px rgba(220, 220, 220, 0.5);
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+
+#proposalList {
+  list-style: none;
+  padding: 0;
+  margin: 1.3rem 0 0 0;
+  position: absolute;
+  top: 300px;
+  width: 37%;
+  background-color: #fff;
+  background-color: rgba(194, 214, 234, 0.9);
+  border: 7px solid rgb(7, 71, 113);
+  border-radius: 2rem;
+  color: black;
+  max-height: 113px;
+  z-index: 5;
+  /* "overflow-y" is used to add vertical scroll bar to the list */
+  overflow-y: auto;
+  line-height: 0.9rem;
+  box-shadow: 0 0px 0px 11px rgba(220, 220, 220, 0.5);
+}
+
+  #proposalList li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#proposalList li:hover {
+  color: #fff;
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #09386c90;
+ 
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  color: whitesmoke;
+  padding: 9rem;
+  position: absolute;
+  background-color: #09386c90;
+  width: 100%;
+  height: 100%;
+}
+/* -------------------------------------------------------------------------- */
+/*                                    MAİN                                    */
+/* -------------------------------------------------------------------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25rem;
+  position: relative;
+  z-index: 3;
+}
+
+.badges {
+  margin-top: -3.5rem;
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.badges .badge {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  width: 30%;
+  border-radius: 1.2rem;
+  gap: 1rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: all 0.5s;
+  box-shadow: 0 0px 0px 11px rgba(220, 220, 220, 0.5);
+}
+
+.badge:hover {
+  transform: scale(1.051);
+  opacity: 1;
+  box-shadow: 0 0px 0px 11px #004f96aa;
+}
+.badge:hover p {
+  font-weight: bolder;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+  padding: 0.3rem 0;
+}
+
+.badge p {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+.badge i {
+  font-size: 3rem;
+  padding-left: 1rem;
+  color: whitesmoke;
+}
+
+.badges .badge1 {
+  background-color: #32b8de;
+  transition: all 1s;
+}
+
+.badges .badge2 {
+  background-color: #90cb25;
+}
+.badges .badge3 {
+  background-color: #fe6672;
+}
+
+.announcements {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.announcements h3 {
+  margin-bottom: 1rem;
+}
+
+.announcements p {
+  margin-bottom: 0.4rem;
+}
+
+hr {
+  background-color:#0C4E95; 
+  height: 0.5rem; 
+  margin: 0.1rem 50% 1rem 0;
+}
+.announcements-topic {
+  color: #fe6672 !important;
+  font-weight: bold !important;
+  font-size: 2.3rem !important;
+}
+
+li:hover, li.hover-effect {
+  background-color: #09386c90;
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+  /*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1600px) {
+  header input {
+    width: 60%;
+    padding: 1rem;
+  }
+  header {
+    padding: 9rem 0;
+  }
+
+  main {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  header input {
+    width: 80%;
+    padding: 1rem;
+  }
+  header {
+    padding: 9rem 0;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header input {
+    width: 80%;
+    padding: 1rem;
+  }
+  header {
+    padding: 9rem 3rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 9rem 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  header input {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  .badges {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .badges .badge {
+    width: 100%;
+  }
+
+  main {
+    margin: 0 25px;
+    padding: 0 10px;
+  }
+
+  .badge:hover {
+    transform: scale(1.03);
+  }
+  .announcements {
+    margin-left: 10px;
+  }
+
+  #proposalList {
+    top: 320px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 9rem 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  header input {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  .badges {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .badges .badge {
+    width: 100%;
+  }
+
+  .badge:hover {
+    transform: scale(1.03);
+  }
+  .announcements {
+    margin-left: 10px;
+  }
+  #proposalList {
+    top: 330px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #proposalList {
+    top: 335px;
+  }
+}
